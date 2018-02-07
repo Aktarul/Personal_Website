@@ -14,8 +14,8 @@
             width: 300px;
             position: fixed;
             z-index: 1;
-            top: 0;
-            left: 0;
+            top: 5px;
+            left: 5px;
             background-color: rgb(83, 136, 180);
             overflow-x: hidden;
             padding-top: 20px;
@@ -34,41 +34,99 @@
         }
 
         .main {
-            margin-left: 200px; /* Same as the width of the sidenav */
+            margin-left: 315px; /* Same as the width of the sidenav */
+            margin-top: 120px;
         }
 
         .header {
-                background-color: #bbbbbb;
-                padding: 5px;
-                text-align: center;
-                font-size: 120%;
+            background-color: #bbbbbb;
+            padding: 20px;
+            top: 5px;
+            left: 310px;
+            right: 10px;
+            position: fixed;
+            text-align: center;
+            font-size: 150%;
+        }
+        .footer {
+            background-color: #40a3a3;
+            padding: 20px;
+            top: 570px;
+            left: 310px;
+            right: 10px;
+            position: fixed;
+            font-size: 100%;
+            text-align: center
+        }
+        img.cover {
+            opacity: 0.4;
         }
 
-        @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
         }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+  
     </style>
 </head>
 
 <body>
 
     <div class="header">
-            <h1>Aktarul Islam</h1>
-            <h5>MEAN stack developer</h5>
+            <h1 style=" display: inline ">Aktarul Islam</h1>
+            <b><p style=" display: inline; font-family: 'Bradley Hand ITC'; color: black">
+                &nbsp MEAN stack developer</p>
+            </b>
     </div>
 
     <div class="sidenav">
-        <img src="33.JPG" >
+        <img src="images/33.JPG" >
         <a href="index.html">Home</a>
-        <a href="#">Personal Informations</a>
-        <a href="#">Photos</a>
-        <a href="#">Contact</a>
+        <a href="views/Personal_info.html">Personal Informations</a>
+        <a href="views/Photos.html">Photos</a>
+        <a href="views/Skills.html">Skills</a>
     </div>
 
     <div class="main">
-        <h2>Sidenav Example</h2>
-        <p>This sidenav is always shown.</p>
+        <div class="container">
+            <img class="cover" src="images/cover.png" width="1013px">
+            <div class="centered">
+                <h1 style="color:#000000; font-size:220%">
+                        <pre>   I'm an undergraduate student. 
+    I've learned C, C++, Java, 
+Database, SQL, HTML, CSS, MEAN stack.  
+I have also completed some projects using 
+these languages. I'm still learning and trying 
+    to increase the number of projects. 
+                         
+Always ready and interested in learning 
+    new technology.
+                    </pre>
+                </h1>
+            </div>      
+        </div>        
+    </div>
+
+    <div class="footer">
+            <b><p style=" display: inline; font-family: 'Lucida Calligraphy'; color: black">
+                Contact me:</p>
+            </b> &nbsp&nbsp
+            <a href="https://github.com/Aktarul"> 
+                <img src="images/github.png" height="30" width="30"> 
+            </a>&nbsp
+            <a href="https://www.linkedin.com/in/aktarul"> 
+                <img src="images/linkedin.png" height="30" width="30"> 
+            </a>&nbsp
+            <a href="#"> <img src="images/facebook.png" height="30" width="30"> </a>&nbsp
+            <a href="#"> <img src="images/google.png" height="30" width="30"> </a>&nbsp
     </div>
      
 </body>
